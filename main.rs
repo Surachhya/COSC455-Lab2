@@ -1,3 +1,12 @@
+fn main(){
+    let a = 10;
+    let b = 3.0;
+    let c = a as f64 / (b + 1.0);
+    println!("c is {}", c);
+}
+
+
+
 // my hello world program
 
  /*
@@ -28,7 +37,9 @@ fn main() {
  */
 
 //floating point data types
+/*
 fn main(){
     let x: f32 = 10.123456789654321;
     println!(" x is {}",x);
 }
+ */
