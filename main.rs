@@ -1,8 +1,8 @@
 fn main(){
-    let a = 10;
+    let a = 10.0;
     let b = 3.0;
-    let c = a as f64 / (b + 1.0);
-    println!("c is {}", c);
+    let c = a / b;
+    println!("c is {:08.3}\na is {1}\nonce again, c is {0}", c, a);
 }
 
 
@@ -41,5 +41,12 @@ fn main() {
 fn main(){
     let x: f32 = 10.123456789654321;
     println!(" x is {}",x);
+}
+    Airthmetic operations
+fn main(){
+    let a = 10;
+    let b = 3.0;
+    let c = a as f64 / (b + 1.0);
+    println!("c is {}", c);
 }
  */
