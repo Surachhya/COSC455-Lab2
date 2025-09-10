@@ -18,9 +18,17 @@ fn main() {
 
     
 //Integer data types
+/*
 fn main() {
     let mut x: u8 = 255;
     x = x +1 ;
     println!("x is {}", x);
     
 } 
+ */
+
+//floating point data types
+fn main(){
+    let x: f32 = 10.123456789654321;
+    println!(" x is {}",x);
+}
