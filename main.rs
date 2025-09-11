@@ -1,11 +1,14 @@
-fn main() {
-    let mut count = 0;
-    let letters = ['a', 'b', 'c', 'd'];
+fn main(){
+    let mut matrix = [[1,2,3], [4,5,6], [7,8,9]];
 
-    while count < 10 {
-        println!("letter is {}", letters[count]);
-        count += 1;
+    for row in matrix.iter_mut(){
+        for num in row.iter_mut(){
+            *num += 10;
+            print!("{}\t ", num);
 
+        
+        }
+        println!();
     }
 }
 
@@ -62,7 +65,32 @@ fn main(){
     println!("After the loop!");
     println!("result is {}", result);
 }
+While loops
+fn main() {
+    let mut count = 0;
+    let letters = ['a', 'b', 'c', 'd'];
 
+    while count < 10 {
+        println!("letter is {}", letters[count]);
+        count += 1;
+
+    }
+}
+// For loops
+fn main(){
+    let message = ['h', 'e', 'l', 'l', 'o'];
+
+    for (index, &item) in message.iter().enumerate(){
+        println!("item {} is {}", index, item);
+        if item == 'e'{
+            break;
+        }
+
+    }
+    for number in 0..5{
+        println!("number is {}", number);
+    }
+}
  
 my hello world program
  fn main() {
