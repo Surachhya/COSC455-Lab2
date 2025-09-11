@@ -1,18 +1,60 @@
 fn main(){
-    let celsius_temp = 23.0;
-    let fahrenheit_temp = celsius_to_fahrenheit(celsius_temp);
+    let mut count = 0;
 
-    assert_eq!(fahrenheit_temp, 73.4);
-    println!("Test passed");
 
+    let result = loop{
+        if count == 10{
+            break count * 10;
+        
+        }
+        count +=1;
+        println!("count is {}", count);
+    };
+
+    println!("After the loop!");
+    println!("result is {}", result);
 }
 
-fn celsius_to_fahrenheit(celsius: f64) -> f64 {
-    (celsius * 9.0/5.0) + 32.0
+
+
+
+
+/* Control flow conditional executions
+fn main (){
+    let x =4;
+
+     if x + 1 !=3{
+        println!("x + 1 is not three");
+     }
+}
+multiple conditions
+fn main(){
+    let x =3;
+    let y = 5;
+
+    if x > y{
+        println!("x is greater than y");
+    } else if x < y {
+        println!("x is less than y");
+    } else {
+        println!("x is equal to y");
+    }
+}
+COnditional assignment
+fn main(){
+    let make_x_odd = true;
+    let x;
+
+    if make_x_odd {
+        x = 1;
+    } else {
+        x = 2;
+    }
+    println!("x is {}", x);
 }
 
 
- /*
+ 
 my hello world program
  fn main() {
     println!("Hello, world!");
@@ -200,4 +242,17 @@ fn square(x: i32) -> (i32, i32){
     println!("End of function");
 
 } 
+Challenge: Chapter4
+fn main(){
+    let celsius_temp = 23.0;
+    let fahrenheit_temp = celsius_to_fahrenheit(celsius_temp);
+
+    assert_eq!(fahrenheit_temp, 73.4);
+    println!("Test passed");
+
+}
+
+fn celsius_to_fahrenheit(celsius: f64) -> f64 {
+    (celsius * 9.0/5.0) + 32.0
+}
  */
