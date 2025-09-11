@@ -1,42 +1,47 @@
-fn main() {
-    let letter = 'A';
-    let number = '1';
-    let finger = "\u{261D}";
-    println!("{}\n{}\n{}", letter, number, finger);
+fn main(){
+    let a = 13;
+    let b = 2.3;
+    let c: f32 = 120.0;
+    let average = ( a as f64 + b  + c as f64) /3.0;
+
+
+    assert_eq!(average, 45.1);
+    println!("Test passed");
+
 }
 
 
-// my hello world program
 
  /*
+my hello world program
  fn main() {
     println!("Hello, world!");
 }
  
-*/
+
 //declaring variables
-/*
+
 fn main() {
     let mut x = 10;
     println!("x is {}", x);
     x = 20;
     println!("x is {}", x);
 }
- */
+ 
 
     
 //Integer data types
-/*
+
 fn main() {
     let mut x: u8 = 255;
     x = x +1 ;
     println!("x is {}", x);
     
 } 
- */
+
 
 //floating point data types
-/*
+
 fn main(){
     let x: f32 = 10.123456789654321;
     println!(" x is {}",x);
@@ -107,5 +112,13 @@ fn main() {
     println!("a LESS THAN OR EQUAL TO b is {}", a <= b);
     println!("a LESS THAN b is {}", a < b);
 }
+Char data types
+fn main() {
+    let letter = 'A';
+    let number = '1';
+    let finger = "\u{261D}";
+    println!("{}\n{}\n{}", letter, number, finger);
+}
+
 
  */
