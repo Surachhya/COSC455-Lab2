@@ -1,13 +1,24 @@
-fn main() {
-    let mut stuff : (u8, f32, char) = (10, 3.14, 'A');
-    stuff.0 +=3;
-    let first_item = stuff.0;
-    println!("first item is {}", first_item);
+fn main(){
+    say_hello();
+    say_hello();
+    let x =1;
+    let y =2;
+    say_the_sum(x,y);
+    say_a_number(x as i32);
 
-    let (a, b, c) = stuff;
-    println!(" b is {}", b);
 }
+fn say_hello(){
+    println!("Hello, world!");
+    say_a_number(13);
+}
+fn say_a_number(number: i32){
+    println!("the number is {}", number);
+}
+fn say_the_sum( a: u8, b:u8){
+    let sum = a+b;
+    println!("the sum is {}", sum);
 
+}
 
 
  /*
@@ -145,4 +156,23 @@ fn main() {
     
 }
 
+Multidimensional Arrays
+fn main(){
+    let parking_lot = [[1,2,3], [4,5,6]];
+    let number = parking_lot[1][2];
+    println!("number is {}", number);
+
+
+
+}
+Tuples
+fn main() {
+    let mut stuff : (u8, f32, char) = (10, 3.14, 'A');
+    stuff.0 +=3;
+    let first_item = stuff.0;
+    println!("first item is {}", first_item);
+
+    let (a, b, c) = stuff;
+    println!(" b is {}", b);
+}
  */
