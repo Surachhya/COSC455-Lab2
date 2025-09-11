@@ -1,13 +1,14 @@
-fn main(){
-    let a = 13;
-    let b = 2.3;
-    let c: f32 = 120.0;
-    let average = ( a as f64 + b  + c as f64) /3.0;
+fn main() {
+    let mut letters = ['A', 'B', 'C'];
+    letters[0] = 'Z';
+    let first_letter = letters[0];
+    println!("first letter is {}", first_letter);
 
-
-    assert_eq!(average, 45.1);
-    println!("Test passed");
-
+    let numbers: [i32; 5];
+    numbers = [0; 5];
+    let index : usize = numbers.len();
+    println!("last number is {}", numbers[index]);
+    
 }
 
 
@@ -120,5 +121,17 @@ fn main() {
     println!("{}\n{}\n{}", letter, number, finger);
 }
 
+Find Average
+fn main(){
+    let a = 13;
+    let b = 2.3;
+    let c: f32 = 120.0;
+    let average = ( a as f64 + b  + c as f64) /3.0;
+
+
+    assert_eq!(average, 45.1);
+    println!("Test passed");
+
+}
 
  */
