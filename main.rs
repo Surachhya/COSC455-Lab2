@@ -1,14 +1,11 @@
 fn main() {
-    let mut letters = ['A', 'B', 'C'];
-    letters[0] = 'Z';
-    let first_letter = letters[0];
-    println!("first letter is {}", first_letter);
+    let mut stuff : (u8, f32, char) = (10, 3.14, 'A');
+    stuff.0 +=3;
+    let first_item = stuff.0;
+    println!("first item is {}", first_item);
 
-    let numbers: [i32; 5];
-    numbers = [0; 5];
-    let index : usize = numbers.len();
-    println!("last number is {}", numbers[index]);
-    
+    let (a, b, c) = stuff;
+    println!(" b is {}", b);
 }
 
 
@@ -132,6 +129,20 @@ fn main(){
     assert_eq!(average, 45.1);
     println!("Test passed");
 
+}
+
+Arrays
+fn main() {
+    let mut letters = ['A', 'B', 'C'];
+    letters[0] = 'Z';
+    let first_letter = letters[0];
+    println!("first letter is {}", first_letter);
+
+    let numbers: [i32; 5];
+    numbers = [0; 5];
+    let index : usize = numbers.len();
+    println!("last number is {}", numbers[index]);
+    
 }
 
  */
