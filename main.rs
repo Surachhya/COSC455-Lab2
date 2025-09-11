@@ -1,13 +1,8 @@
 fn main() {
-    let a = 1;
-    let b = 2;
-    println!("a is {} and b is {}", a, b);
-    println!("a EQUALS b is {}", a == b);
-    println!("a NOT EQUALS b is {}", a != b);
-    println!("a GREATER THAN b is {}", a > b);
-    println!("a GREATER THAN OR EQUAL TO b is {}", a >= b);
-    println!("a LESS THAN OR EQUAL TO b is {}", a <= b);
-    println!("a LESS THAN b is {}", a < b);
+    let letter = 'A';
+    let number = '1';
+    let finger = "\u{261D}";
+    println!("{}\n{}\n{}", letter, number, finger);
 }
 
 
@@ -99,6 +94,18 @@ fn main() {
 
     let c = ( a ^ b) && panic!(); //( a ^ b) || (a & b);
     println!("c is {}", c);
+
+Comparison operators
+fn main() {
+    let a = 1;
+    let b = 2;
+    println!("a is {} and b is {}", a, b);
+    println!("a EQUALS b is {}", a == b);
+    println!("a NOT EQUALS b is {}", a != b);
+    println!("a GREATER THAN b is {}", a > b);
+    println!("a GREATER THAN OR EQUAL TO b is {}", a >= b);
+    println!("a LESS THAN OR EQUAL TO b is {}", a <= b);
+    println!("a LESS THAN b is {}", a < b);
 }
 
  */
