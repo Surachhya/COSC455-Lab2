@@ -1,24 +1,14 @@
 fn main(){
-    say_hello();
-    say_hello();
-    let x =1;
-    let y =2;
-    say_the_sum(x,y);
-    say_a_number(x as i32);
+    let result = square(13);
+    println!("result is {:?}", result);
 
 }
-fn say_hello(){
-    println!("Hello, world!");
-    say_a_number(13);
-}
-fn say_a_number(number: i32){
-    println!("the number is {}", number);
-}
-fn say_the_sum( a: u8, b:u8){
-    let sum = a+b;
-    println!("the sum is {}", sum);
+fn square(x: i32) -> (i32, i32){
+    println!(" squaring {}", x);
+    return (x, x * x);
+    println!("End of function");
 
-}
+} 
 
 
  /*
@@ -174,5 +164,27 @@ fn main() {
 
     let (a, b, c) = stuff;
     println!(" b is {}", b);
+}
+Function parameters
+fn main(){
+    say_hello();
+    say_hello();
+    let x =1;
+    let y =2;
+    say_the_sum(x,y);
+    say_a_number(x as i32);
+
+}
+fn say_hello(){
+    println!("Hello, world!");
+    say_a_number(13);
+}
+fn say_a_number(number: i32){
+    println!("the number is {}", number);
+}
+fn say_the_sum( a: u8, b:u8){
+    let sum = a+b;
+    println!("the sum is {}", sum);
+
 }
  */
