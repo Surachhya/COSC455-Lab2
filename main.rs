@@ -1,4 +1,19 @@
-fn main(){
+use std::io;
+
+fn main() {
+    let mut buffer = String::new();
+    println!("Enter your message: ");
+    io::stdin().read_line(&mut buffer).expect("Failed to read line");
+    println!("buffer is {}", buffer);
+
+    let number: i32 = buffer.trim().parse().unwrap();
+    print!("number + 1 is {}", number + 1);
+}
+
+
+
+
+/* fn main(){
     let numbers = [1, 9, -2, 0, 23, 20, -7, 13, 37, 20, 56, -18, 20, 3];
     let mut max: i32 ;
     let mut min: i32 ;
@@ -27,7 +42,7 @@ fn main(){
 
 
 
-/* Control flow conditional executions
+Control flow conditional executions
 fn main (){
     let x =4;
 
