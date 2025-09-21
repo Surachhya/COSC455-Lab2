@@ -1,4 +1,21 @@
-struct Shuttle {
+struct Color (u8, u8, u8); //RGB
+struct Point(u8, u8, u8); //XYZ
+
+fn get_y(p: Point) -> u8 {
+    p.1
+}
+
+fn main(){
+    let red = Color(255, 0, 0);
+    println!("First value is {}", red.0);
+
+    let cord = Point(4,5,6);
+    let y = get_y(cord);
+    println!("y is {}", y);
+}
+
+
+/*struct Shuttle {
     name: String,
     crew_size: u8,
     propellant: f64
@@ -34,7 +51,7 @@ fn main(){
 }
 
 
-/* use std::env;
+ use std::env;
 use std::fs;
 
 fn main(){
